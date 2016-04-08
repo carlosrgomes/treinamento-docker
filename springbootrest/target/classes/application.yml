@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: pessoa
+  data:
+    rest:
+      base-path: api
+    jpa:
+      repositories:
+        enabled: true
+  datasource:
+    data-source-url: jdbc:hsqldb:mem:visitantes
+    data-source-class-name: org.hsqldb.jdbcDriver
+    data-source-max-active: 20
+  jpa:
+    open-in-view: true
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.HSQLDialect
+
+server:
+  port: 8080
+
+
+
