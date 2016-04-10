@@ -1,4 +1,7 @@
-FROM alpine
+# Imagem Base - https://hub.docker.com/_/alpine/
+FROM alpine 
+
+# Created by
 MAINTAINER Carlos Barbero <carlosrgomes@gmail.com>
 
 # Install cURL
@@ -6,7 +9,7 @@ RUN apk --update add curl ca-certificates tar && \
     curl -Ls https://circle-artifacts.com/gh/andyshinn/alpine-pkg-glibc/6/artifacts/0/home/ubuntu/alpine-pkg-glibc/packages/x86_64/glibc-2.21-r2.apk > /tmp/glibc-2.21-r2.apk && \
     apk add --allow-untrusted /tmp/glibc-2.21-r2.apk
 
-# Java Version
+# Setting variables version of java
 ENV JAVA_VERSION_MAJOR 8
 ENV JAVA_VERSION_MINOR 77
 ENV JAVA_VERSION_BUILD 03
@@ -38,6 +41,6 @@ RUN mkdir /opt && curl -jksSLH "Cookie: oraclelicense=accept-securebackup-cookie
            /opt/jdk/jre/lib/amd64/libjavafx*.so \
            /opt/jdk/jre/lib/amd64/libjfx*.so
 
-# Set environment
+# Set environment variable
 ENV JAVA_HOME /opt/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
