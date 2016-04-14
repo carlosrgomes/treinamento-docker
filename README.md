@@ -7,7 +7,7 @@ entendimento do conteúdo do treinamento docker
 
 Para conseguir utilizar os projetos do treinamento é necessários instalar o docker, eclipse, JDK e postman:
 
-* Link da Instalação Dokcer: [https://docs.docker.com/engine/installation/]
+* Link da Instalação Docker: [https://docs.docker.com/engine/installation/]
 * Link eclipse: [https://www.eclipse.org/downloads/]
 * Link JDK: [http://www.oracle.com/technetwork/pt/java/javase/downloads/index.html]
 * Link da extensão do chrome Postman [https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop]
