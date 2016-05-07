@@ -19,7 +19,7 @@ Link para teste no postman: [https://www.getpostman.com/collections/99c5b301d194
 ### Docker Compose
 1. Criar Django Project - docker-compose run web django-admin.py startproject composeexample .
 2. Alterar configurações do banco de dados composeexample/settings.py
-
+```java
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -29,5 +29,5 @@ DATABASES = {
         'PORT': 5432,
     }
 }
-
+```
 3. subir o docker compose docker-compose up
